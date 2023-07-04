@@ -1,0 +1,258 @@
+@media screen and (min-width:768px) and (max-width:1180px) {
+    
+
+/* 
+*{
+    margin :0;
+    padding:0;
+} */
+body{
+    width:100vw;
+    height:100vh;
+    background-color:rgb(61,8,123);
+     /* overflow-x: hidden;  */
+     overflow-y:scroll;  
+     /* display:flex;  */
+    
+}
+.main_parent
+{
+     display: flex;
+     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center ; 
+    align-items: center;
+    box-sizing: border-box; 
+    /* gap:20px;    */
+    /*new exp.                          */
+    position:relative;
+}
+
+.clock_logo img
+{
+  /*  height:8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /*new exp.                          */
+    position: relative;
+    top:5vh;
+    left:4vw;
+    height: 8vh;
+}
+
+.time_block
+{
+    /*new exp.                                  */
+    position: absolute;
+    top:58vh;
+    left:8vw;
+   
+    width:83vw;
+    height:40vh;
+   
+    padding:1vh 1vw 1vh 1vw ;
+}
+
+.time_block div ,.time_block img,.time_block div select,.time_block div select option {
+    background-color: #FFFFFF;
+    color:#3D087BDE;
+}
+
+.time_block div {
+    font-size:32px;
+}
+
+.time_block div select{
+    /* border: 1px solid #EDEDED;
+    border-radius: 4px; */
+    /* opacity: 1; */
+    width: 30vw;
+    height: 6vh;
+    font-size: 20px;
+}
+.time_block div select option{
+    font-size: 10px;
+    background-color:#fff;
+    color:black;
+    height: 8vh;
+}
+
+.grid{
+  
+    /*new exp                           */
+    display:grid;
+    grid-template-columns: 37vw 42vw;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    box-sizing: border-box;
+    text-align: center;
+    grid-gap:1vw 1vh;
+    position: absolute;
+    top:150vh;
+    left:10vw;
+    }
+                    /*space between class name will effect code means css property not applied*/
+
+.item_1 {
+    grid-column: 1/3;
+    grid-row:1/3;
+    border-radius: 10px;
+    color:#EDEDED;
+    /* box-sizing: border-box; */
+    font: normal 900 22px/34px Bauhaus Hv BT;
+    background-color:rgb(106,65,154) ;
+    text-align: center;
+    padding:2vh 1vw;
+}
+ #set_alarm 
+{ 
+    grid-column:1/2;
+    grid-row: 3/5;
+    border-radius:6px;
+    font-size: 20px;
+    /* box-sizing: border-box; */
+    font-family: Manrope, SemiBold;
+    background-image: linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
+    text-align: center;
+    color:#FFFFFF;
+    padding:1vh 1vh;
+    
+    
+}
+/*
+#set_alarm:hover
+{
+    background-image: linear-gradient(to left, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
+} */
+#set_alarm::before
+ {   
+    /*font-size: 20px; */
+    content:"SET ALARM";
+}
+#set_alarm:hover::before{
+    display:none;
+}
+#set_alarm:hover::after{
+    content:"Party time";
+}
+
+ .item_3{
+    grid-column:2/3;
+    grid-row:3/6;
+    background-color:rgb(106,65,154) ; 
+    color:rgb(234,90,248); 
+    font: normal normal bold 18px/25px Manrope;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+
+.display_time{
+    width:80vw;
+    height:15vh;
+    /* display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color:  #FFFFFF;  
+    color:#8A11BF;
+    border-radius:10px; 
+    gap:8px ;
+    align-items: center;
+    justify-content: center;  */
+    /*new exp             */
+    position: absolute;
+    top:18vh;
+    left:10vw;
+    
+}
+.Time{
+    width:44vw;
+    height:10vh;
+    font-size:30px;
+    border-radius:6px;
+}
+.Time.time{
+    height:10vh ;
+    width:12vw;
+    text-align: center;
+    font-size:2em;
+    background-repeat: no-repeat;
+    
+/* box-sizing: border-box; */
+}
+
+.Time.hours,.Time.mins,.Time.secs,.Time.AMPM {
+
+/* background-image:url("./time_bg.png") ; */
+width:12vw;
+height:10vh ;
+font-size:2em;
+text-align: center;
+background-repeat: no-repeat;
+/* text-align: center; */
+/* box-sizing: border-box; */
+}
+
+.Time.AMPM{
+/* background-image: url("./am_pm.png"); */
+color:#FFFFFF;
+
+}
+.colon{
+font-size: 34px;
+text-align: center;
+ }
+
+ #bg_block1
+ {
+     width:70vw;
+     height:10vh;
+     background-color: #ffffffab;
+     z-index: -1;
+     position: absolute; 
+     top:26vh;
+     right:15vw;
+     /* border-radius: 10px; */
+ } 
+ #bg_block2
+ /* background-color: #57087bd0; */
+ {
+     width:60vw;
+     height:10vh;
+     /* background-color: #d1a3e6d0;
+     z-index: -2;*/
+     position: absolute; 
+     top:28vh;
+     right:18vw;
+     /* border-radius: 10px; */
+ } 
+
+
+#message{
+    width:80vw;
+    height:12vh;
+    /* background-color: #FFFFFF; */
+    /* color:#8E53F0; */
+    font-size: 30px;
+    font-weight: bold;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px; */
+    /*new exp.                          */
+    position:absolute;
+    top:40vh;
+    right:10vw;
+}
+#img_position{
+    width:82vw;
+    /* height: 44vh; */
+    border-radius: 10px;
+    /* new exp                          */
+    position: absolute;
+    top:105vh;
+    right:10vw;    
+}
+}

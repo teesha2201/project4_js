@@ -1,0 +1,162 @@
+@media screen  and (min-width:337px) and (max-width:667px) {
+    *{
+        margin :0;
+        padding:0;
+    }
+    body{
+        width:100vw;
+        height:100vh;
+        background-color:rgb(61,8,123);
+        overflow-x: hidden; 
+         /* display:flex;  */
+         overflow-y: scroll;
+        
+    }
+    .main_parent
+    {
+        /*new exp.                          */
+        position:relative;
+    }
+    
+    .clock_logo img
+    {
+        /*new exp.                          */
+        position: absolute;
+        top:5vh;
+        left:15vw;
+        height: 8vh;
+    }
+    .time_block
+    {
+        /*new exp.                                  */
+        position: absolute;
+        top:50vh;
+        left:5vw;
+        width:90vw;
+        height:45vh;
+        padding:2vh 2vw 2vh 2vw ;
+    }
+    .time_block div {
+        font-size:16px;
+    }
+    
+    .time_block div select{
+        width: 30vw;
+        height: 6vh;
+        font-size: 14px;
+    }
+    .time_block div select option{
+        font-size: 15px;
+        height: 8vh;
+    }
+    
+    .grid{
+       
+        /*new exp                           */
+        grid-template-columns: 34vw 54vw;
+        grid-gap:3vw 1vh;
+        position: absolute;
+        top:135vh;
+        left:5vw;
+        }
+                        /*space between class name will effect code means css property not applied*/
+    
+    .item_1 {
+        padding:2vh 1vw;
+    }
+     .item_2 
+    { 
+        padding:1vh 1vh;
+    }
+    
+    .display_time{
+        width:90vw;
+        height:14vh;
+        gap:3px ;
+        position: absolute;
+        top:15vh;
+        right:5vw;
+    }
+    .Time{
+        width:15vw;
+        height:8vh;
+        font-size:22px;
+        border-radius:6px;
+    }
+    .Time.time{
+        height:10vh ;
+        width:12vw;
+        text-align: center;
+        font-size:1em;
+        background-repeat: no-repeat;
+        
+    
+    }
+    
+    
+    .Time.hours,.Time.mins,.Time.secs,.Time.AMPM {
+    
+    /* background-image:url("./time_bg.png") ; */
+    
+    text-align: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    box-sizing: border-box;
+    }
+    
+    .Time.AMPM{
+    /* background-image: url("./am_pm.png"); */
+    color:#FFFFFF;
+    
+    }
+    .colon{
+    font-size: 30px;
+    text-align: center;
+     }
+    
+    #bg_block1
+    {
+        width:80vw;
+        height:10vh;
+        background-color: #ffffffab;
+        z-index: -1;
+        position: absolute;
+        top:21vh;
+        right:10vw;
+        border-radius: 10px;
+    } 
+    #bg_block2
+    /* background-color: #57087bd0; */
+    {
+        width:70vw;
+        height:10vh;
+        background-color: #d1a3e6d0;
+        z-index: -2;
+        position: absolute;
+        top:23vh;
+        right:15vw;
+        border-radius: 10px;
+    } 
+    
+    #message{
+        width:92vw;
+        height:12vh;
+        font-size: 24px;
+        /*new exp.                          */
+        position:absolute;
+        top:36vh;
+        right:4vw;
+    }
+    #img_position{
+        width: 90vw;  
+        border-radius: 10px;
+        /* new exp                          */
+        position: absolute;
+        top:98vh;
+        right:5vw;   
+        /* height:42vh ; */
+    }
+    
+    
+}
+
