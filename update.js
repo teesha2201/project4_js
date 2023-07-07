@@ -14,6 +14,10 @@ function clockstart()
         hrs-=12;
         AmPm="PM";
     }
+    else if(hrs==12)
+    {
+        AmPm="PM"
+    }
     else
     {
         AmPm="AM";
@@ -22,7 +26,31 @@ function clockstart()
     assigntime[2].innerHTML=`${mins} mins`;
     assigntime[3].innerHTML=`${secs} \nsecs`;
     assigntime[4].innerHTML=`${AmPm}`;
+ /*final update*/
+   if(hrs>=4 &&  hrs<=11  && AmPm === "AM")
+     {
+        Msg.innerHTML=" GRAB SOME HEALTHY BREAKFAST!!!";
+     }
 
+    else if(hrs>=1 && hrs<=4  && AmPm === "PM")
+    {
+        Msg.innerText="LET'S HAVE SOME HEALTHY LUNCH !!";
+    }
+    
+    else if(hrs>4 && hrs<=8 && AmPm === "PM")
+    {
+        Msg.innerText= `  STOP YAWNING , GET SOME TEA..ITS JUST EVENING !!!`;
+    }
+    else if(hrs>8 && hrs>12 && AmPm === "PM" || hrs>=1 && hrs<4 && AmPm ==="AM" )
+    {
+        Msg.innerHTML=" CLOSE YOUR EYES AND GO TO SLEEP";
+    }
+    else if(hrs<=12 && AmPm==="AM" )
+    {
+        Msg.innerHTML= "Take Some Deep sleep "
+    }
+	
+/* second code update
  if(hrs>=4 &&  hrs<=11  && AmPm === "AM")
      {
         Msg.innerHTML=" GRAB SOME HEALTHY BREAKFAST!!!";
@@ -44,8 +72,8 @@ function clockstart()
     {
         Msg.innerHTML=" CLOSE YOUR EYES AND GO TO SLEEP";
     }
-   	
-
+  */ 	
+//----first code
     // if(hrs>=10 && AmPm === "AM")
     //  {
     //      Msg.innerHTML=" GRAB SOME HEALTHY BREAKFAST!!!";
